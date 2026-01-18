@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>banner_01</title>
+
+<link rel="stylesheet" href="../css/style-banner.css">
+
+</head>
+<body>
+
+<header>
+
+  <h1 class="title"><img src="../img/studylog.png" alt=""></h1>
+  <nav id="pc-nav">
+    <ul>
+      <li><a href="../index.html">Web Site</a></li>
+      <li><a href="../banner-page/banner.html">Banner</a></li>
+      <li><a href="../codepen-page/codepen.html">CodePen</a></li>
+      <li><a href="../about-page/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <button id="ham-btn">
+    <span></span>
+  </button>
+
+  </div>
+
+  <nav id="sp-nav">
+    <ul>
+      <li><a href="../index.html">Web Site</a></li>
+      <li><a href="../banner-page/banner.html">Banner</a></li>
+      <li><a href="../codepen-page/codepen.html">CodePen</a></li>
+      <li><a href="../about-page/about.html">About</a></li>
+    </ul>
+  </nav>  
+
+</header>
+
+<div class="container">
+
+  <div class="img-wrapper">
+    <div class="img-box"><img src="" alt=""></div>
+    <div class="img-box"><img src="" alt=""></div>
+    <div class="img-box"><img src="" alt=""></div>
+  </div>
+
+  <div class="lead-wrapper">
+    <div class="lead">
+
+      <h1></h1>
+
+      <h2>制作日</h2>
+        <p></p>
+
+      <h2>制作時間</h2>
+        <p></p>
+
+      <h2>使用ツール</h2>
+        <p>Illustrator：</p>
+        <p>Photoshop：</p>
+
+      <h2>作業内容</h2>
+        <ul>
+          <li>①</li>
+          <li>②</li>
+          <li>③</li>
+          <li>④</li>
+          <li>⑤</li>
+        </ul>
+
+      <h2>所感</h2>
+        <p>
+          
+        </p>
+
+    </div>
+  </div>
+
+</div>
+
+  
+</body>
+</html>

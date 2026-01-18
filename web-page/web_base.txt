@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web_01</title>
+
+<link rel="stylesheet" href="../css/style-banner.css">
+
+</head>
+<body>
+
+
+
+<div class="container">
+
+  <div class="img-wrapper">
+    <div class="img-box"><img src="" alt=""></div>
+  </div>
+
+  <div class="lead-wrapper">
+    <div class="lead">
+
+      <h1></h1>
+
+      <h2>完成日・制作期間</h2>
+        <p></p>
+
+      <h2>テーマ</h2>
+        <p></p>
+        
+      <h2>設定</h2>
+        <p>
+          
+        </p>
+
+      <h2>ページ構成</h2>
+        <ul>
+          <li>header：</li>
+          <li>main：</li>
+          <li>footer：</li>
+        </ul>
+
+      <h2>使用カラー</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+      <h2>使用したプラグイン</h2>
+        <p>
+          
+        </p>
+
+      <h2>使用フォント</h2>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+
+      <h2>ポイント</h2>
+        <p>
+          
+        </p>
+
+      <h2>所感</h2>
+        <p>
+          
+        </p>
+
+    </div>
+  </div>
+
+</div>
+
+  
+</body>
+</html>

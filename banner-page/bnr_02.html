@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>みんなだれかのサンタさん</title>
+
+<link rel="stylesheet" href="../css/banner_page.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+</head>
+<body id="top">
+
+<header>
+
+  <nav id="pc-nav">
+  <h1 class="title"><img src="../img/studylog.webp" alt=""></h1>  
+    <ul>
+      <li><a href="../">Web Site</a></li>
+      <li><a href="../banner-page/">Banner</a></li>
+      <li><a href="../codepen-page/">CodePen</a></li>
+      <li><a href="../about-page/">About</a></li>
+      <li class="slide"></li>
+    </ul>
+  </nav>
+
+  <div class="sp-header">
+
+    <h1 class="sp-title"><img src="../img/studylog.webp" alt=""></h1>
+    <button id="ham-btn">
+      <span></span>
+    </button>
+
+  </div>
+
+  <nav id="sp-nav">
+    <ul>
+      <li><a href="../">Web Site</a></li>
+      <li><a href="../banner-page/">Banner</a></li>
+      <li><a href="../codepen-page/">CodePen</a></li>
+      <li><a href="../about-page/">About</a></li>
+    </ul>
+  </nav> 
+
+</header>
+
+<a href="#top">
+<button class="top-button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="#fff" d="m12.9 5.1 10.7 10.7c.5.5.5 1.4 0 1.9l-1.2 1.2c-.5.5-1.3.5-1.9 0L12 10.4l-8.5 8.5c-.5.5-1.3.5-1.9 0L.4 17.7c-.5-.5-.5-1.4 0-1.9L11.1 5.1c.5-.5 1.3-.5 1.8 0z"/>
+    </svg>
+</button>
+</a>
+
+<div class="container">
+
+  <div class="img-wrapper">
+    <div class="img-box"><a href="../img/banner-img/bnr02/bnr02_santa.webp" data-lightbox="photo"><img src="../img/banner-img/bnr02/bnr02_santa.webp" alt="メイン画像"></a></div>
+    <div class="img-box"><a href="../img/banner-img/bnr02/outline.webp" data-lightbox="photo"><img src="../img/banner-img/bnr02/outline.webp" alt="アウトライン画像"></a></div>
+    <div class="img-box"><a href="../img/banner-img/bnr02/layer.webp" data-lightbox="photo"><img src="../img/banner-img/bnr02/layer.webp" alt="レイヤー画像"></a></div>
+  </div>
+
+  <div class="lead-wrapper">
+    <div class="lead">
+
+      <h2 class="title-name">みんなだれかのサンタさん</h2>
+
+      <h3>制作日</h3>
+        <p>2025/08/25</p>
+
+      <h3>制作時間</h3>
+        <p>60分</p>
+
+      <h3>使用ツール</h3>
+        <p>Illustrator：図形ツール、ペンツール、パスファインダー、グラデーションツール</p>
+        <p>Photoshop：ベクトルスマートオブジェクト、フィルターギャラリー、文字ツール</p>
+
+      <h3>作業内容</h3>
+        <ol>
+          <li>①Aiの図形ツールで図形を作り、コピーや回転をして配置</li>
+          <li>②パスファインダーを使用して分割や合体を行い図形を完成</li>
+          <li>③白いひげをペンツールを使用して左半分を作成</li>
+          <li>④回転とコピーを行いひげを完成させ、コピーをして複数配置</li>
+          <li>⑤Psにベクトルスマートオブジェクトで配置して文字や背景を配置</li>
+          <li>⑥フィルターギャラリーの粒状を使用して赤と緑色の質感を調整</li>
+        </ol>
+
+      <h3>所感</h3>
+        <p>
+          職業訓練校の授業で制作しました。<br>
+          作業工程が少なくなるように効率よく図形を組み合わせる事を意識して制作しました。<br>
+          グラデーションツールを初めて使用しました。<br>
+          下の英文の文字間や文字の大きさが不規則になっていたため、細かく調整するのが大変でした。
+        </p>
+
+    </div>
+  </div>
+
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+<script src="../js/bubbly-bg.js"></script>
+<script src="../js/lightbox.js"></script>
+
+<script>
+
+bubbly({
+    background: (ctx) => {
+        const gradient = ctx.createLinearGradient(0, 0, ctx.canvas.width, ctx.canvas.height);
+        gradient.addColorStop(0, "#fbc2eb");
+        gradient.addColorStop(1, "#a6c1ee");
+        return gradient;
+    },
+    bubbles: {
+        fill: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.07})`,
+        shadow: () => ({blur: 20, color: "#ffffff7e"})
+    }
+});
+
+lightbox.option({
+  showImageNumberLabel: false
+});
+
+$(function(){
+
+  $('#ham-btn').on('click',function(){
+    $(this).toggleClass('is-active');
+    $('#sp-nav').fadeToggle();
+  });
+
+  $('#sp-nav a').on('click',function(){
+    $('#ham-btn').removeClass('is-active');
+    $('#sp-nav').fadeOut();
+  });
+});
+
+</script>
+
+</body>
+</html>

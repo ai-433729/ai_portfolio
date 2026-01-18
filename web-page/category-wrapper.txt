@@ -1,0 +1,9 @@
+      <div class="category-wrapper">
+        <p class="category" data-caregory="html">HTML/CSS</p>
+        <p class="category" data-caregory="js">JavaScript</p>
+        <p class="category" data-caregory="jq">jQuery</p>
+        <p class="category" data-caregory="sass">Sass</p>
+        <p class="category" data-caregory="php">PHP</p>
+        <p class="category" data-caregory="wp">WordPress</p>
+        <p class="category" data-caregory="sql">MySQL</p>
+      </div>
