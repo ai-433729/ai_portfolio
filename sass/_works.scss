@@ -39,39 +39,30 @@ transition: .4s;
   &:hover{
   cursor: pointer;
     &::after{
-    right: 40px;
+    right: 42px;
     }   
   }
 
 }
-.view-btn{
+.visit-btn{
 display: flex;
 justify-content: center;
 align-items: center;
 width: 80%;
 height: 34px;
 border: 1px solid #fff;
-position: relative;
 margin: 0 auto 10px;
 transition: .4s;
 background-color: #c3ace0;
-  .view-btn-txt{
-  color: #fff;
-  margin: 0;
-  margin-right: 8px;
-  font-size: clamp(0.625rem, 0.438rem + 0.75vw, 1rem);
-  }
-  .btn-img{
+color: #fff;
+font-size: clamp(0.625rem, 0.438rem + 0.75vw, 1rem);
+gap: 5px;
+  &::after{
+  content: '';
+  display: block;
+  background: url(../img/window.svg) no-repeat center/contain;
   width: 14px;
   height: 14px;
-  display: flex;
-  align-items: center;
-    >img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    display: block;
-    }
   }
   &:hover{
   background-color: #aecdf5;
@@ -229,7 +220,7 @@ margin: 20px auto;
 }
 .web-title{
 color: $web_txt_color;
-font-size: clamp(1rem, 0.875rem + 0.5vw, 1.25rem);
+font-size: 16px;
 text-align: center;
 margin-bottom: 10px;
 }
