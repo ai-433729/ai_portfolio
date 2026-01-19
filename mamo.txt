@@ -1,0 +1,9 @@
+background
+
+background: #ffffff75;
+border-radius: 16px;
+box-shadow: 0 4px 30px #0000001a;
+backdrop-filter: blur(10.4px);
+-webkit-backdrop-filter: blur(10.4px);
+border: 1px solid #ffffff42;
+border-radius: 10px;

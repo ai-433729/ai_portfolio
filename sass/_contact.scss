@@ -1,13 +1,25 @@
 @use "reset";
 @use "var";
 
-$bgc_color: #c891e2;
-$btn_hv_color: #e2f1fa;
-$text_color: #fff;
+$bgc_color: #e9ebff;
+$btn_hv_color: #e0c9f7;
+$text_color: #777;
+
+.contact-lead-box{
+width: fit-content;
+margin: 0 auto 30px;
+padding: 20px;
+}
+.contact-lead{
+width: fit-content;
+margin: 0 auto 10px;
+color: #fff;
+border-bottom: 2px dotted #fff;
+}
 
 .form-container{
 max-width: 600px;
-margin: 50px auto;
+margin: 50px auto 0;
 color: $text_color;
 font-family: var.$font_en_h2;
 background-color: $bgc_color;

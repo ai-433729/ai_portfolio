@@ -1,10 +1,10 @@
 @use "reset";
 @use "var";
 
-
-/* $bgc_color: #b6d4dd; */
-$tl_bgc_color: #a3b4ff;
-$txt_color: #fff; 
+$tl_bgc_color: #e9ebff;
+$bar_color: #fff;
+$circle_color: #c2e8fa;
+$txt_color: #999; 
 
 .career-wrapper{
 padding: 100px 0;
@@ -26,7 +26,7 @@ position: relative;
 width: 2px;
 margin: 0 auto;
 padding-top: 50px;
-background: $txt_color;//バーのカラー
+background: $bar_color;//バーのカラー
 color: $txt_color;//テキストカラー
 }
 
@@ -96,7 +96,7 @@ transition: 0.5s ease-in-out;
 }
 
 .timeline ul li.in-view::after {
-background: $tl_bgc_color;
+background: $circle_color;//丸のカラー
 }
 
 .timeline ul li .timeline-box {
