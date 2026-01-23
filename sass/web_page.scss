@@ -4,15 +4,18 @@
 @use "scroll-bar";
 @use "top-button";
 
+$txt_color: #888;
+
+
 body{
 position: relative;
-color: #ffffff;
+color: $txt_color;
 }
 
 /* main */
 .container{
 max-width: 1200px;
-margin: 0 auto 50px;
+margin: 100px auto 50px;
 display: flex;
 padding-top: 50px;
 }
@@ -27,9 +30,13 @@ overflow: auto;
 scroll-snap-type: x mandatory;
 padding-bottom: 30px;
 gap: 0 20px;
-border: 2px solid #fff;
-background-color: #ffffffa1;
-border-radius: 20px;
+background: #ffffff75;
+border-radius: 16px;
+box-shadow: 0 4px 30px #0000001a;
+backdrop-filter: blur(10.4px);
+-webkit-backdrop-filter: blur(10.4px);
+border: 1px solid #ffffff42;
+border-radius: 10px;
 padding: 20px;
 }
 .img-box{
@@ -52,19 +59,22 @@ margin: 0 auto;
 }
 .lead{
 padding: 20px;
-backdrop-filter: blur(30px);
-border-radius: 20px;
-border: 2px solid #fff;
+background: #ffffff75;
+border-radius: 16px;
+box-shadow: 0 4px 30px #0000001a;
+backdrop-filter: blur(10.4px);
+-webkit-backdrop-filter: blur(10.4px);
+border: 1px solid #ffffff42;
+border-radius: 10px;
 }
 
 .title-name{
 display: inline-block;
 margin-bottom: 20px;
 font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
-color: #fff;
 }
 h3{
-border-bottom: 1px solid #fff;
+border-bottom: 1px solid $txt_color;
 margin: 30px 0 10px;
 font-size: clamp(1rem, 0.875rem + 0.5vw, 1.25rem);
 }
@@ -118,7 +128,7 @@ align-items: center;
 padding: 0 4px 12px 4px;
 overflow: hidden;
   span{
-  color: #fff;
+  color: $txt_color;
   display: inline-block;
   animation: animation-loading 1.7s infinite;
     &:nth-of-type(2) {
