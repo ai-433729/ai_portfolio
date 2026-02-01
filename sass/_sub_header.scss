@@ -6,6 +6,9 @@
     }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
 $gradient_bgc_color: linear-gradient(120deg,#b4c3ec 0%, #d9c7e9 30%, #b7bbdf 70%, #dbc8f3 100%);
 $bgc_color: #e5cff7;
 $txt_color: #fff;
@@ -22,15 +25,10 @@ top: 0;
 left: 0;
 z-index: 10;
 transition: .4s;
-border-bottom: 1px solid transparent;
 background: linear-gradient(120deg,#b4c3ec 0%, #d9c7e9 30%, #b7bbdf 70%, #dbc8f3 100%);
 border-bottom: 1px solid #fff;
 z-index: 100;
 animation: gradient-anim 6s ease alternate infinite;
-  >.nav-title{
-  color: #fff;
-  font-family: var.$font_en;
-  }
 }
 .nav-title>a{
 color: #fff;
@@ -92,12 +90,14 @@ z-index: 10;
   padding-top: 39px;
 }
 }
+
 .drop-menu-inner{
 padding: 10px 40px 10px 30px;
-&.scroll-drop-menu-inner{
-  background-color: #e3d7f1;
+  &.scroll-drop-menu-inner{
+  background-color: $bgc_color;
+  }
 }
-}
+
 .drop-menu-box{
 margin: 10px 0;
   span{
