@@ -10,7 +10,8 @@
 
 .skill-wrapper{
 padding: 100px 0;
-color: var.$text_color
+color: var.$text_color;
+//background-color: #d1e4f7;
 }
 .skill-list{
 width: 90%;;
@@ -25,6 +26,7 @@ column-gap: 20px;
   backdrop-filter: blur(10.4px);
   -webkit-backdrop-filter: blur(10.4px);
   border: 1px solid #ffffff42;
+  border-radius: 5px;
   }
   .skill-title-box{
   display: flex;

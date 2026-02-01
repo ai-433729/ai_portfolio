@@ -10,27 +10,74 @@
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="../css/web_page.css">
-<link rel="stylesheet" href="../css/lightbox.css">
+<script src="../js/main.js" defer></script>
 
 </head>
 <body id="top">
 
 <header>
-
+  
   <nav id="pc-nav">
-    <h1 class="title"><img src="../img/studylog.webp" alt=""></h1>
+
+    <h1 class="nav-title"><a href="#">Ai_PORTFOLIO</a></h1>
+    
     <ul>
-      <li><a href="../">Web Site</a></li>
-      <li><a href="../banner-page/">Banner</a></li>
-      <li><a href="../codepen-page/">CodePen</a></li>
-      <li><a href="../about-page/">About</a></li>
-      <li class="slide"></li>
+      <li><a href="#">TOP</a></li>
+      <li class="drop-menu-list"><a href="#works">WORKS</a>
+        <div class="drop-menu">
+            <div class="drop-menu-inner">
+              <div class="drop-menu-box">
+                <a href="web-page/index.html">
+                  <span>WebSite</span>
+                </a>
+              </div><!-- /.drop-menu-box -->
+              <div class="drop-menu-box">
+                <a href="banner-page/index.html">
+                  <span>Banner</span>
+                </a>
+              </div><!-- /.drop-menu-box -->
+              <div class="drop-menu-box">
+                <a href="codepen-page/index.html">
+                  <span>Other</span>
+                </a>
+              </div><!-- /.drop-menu-box -->
+            </div><!-- /.drop-menu-inner -->
+          </div><!-- /.drop-menu --> 
+      </li>
+      <li class="drop-menu-list"><a href="#about">ABOUT</a>
+        <div class="drop-menu">
+            <div class="drop-menu-inner">
+              <div class="drop-menu-box">
+                <a href="#profile">
+                  <span>PROFILE</span>
+                </a>
+              </div><!-- /.drop-menu-box -->
+              <div class="drop-menu-box">
+                <a href="#skill">
+                  <span>SKILL</span>
+                </a>
+              </div><!-- /.drop-menu-box -->
+              <div class="drop-menu-box">
+                <a href="#career">
+                  <span>CAREER</span>
+                </a>
+              </div><!-- /.drop-menu-box -->
+              <div class="drop-menu-box">
+                <a href="#like">
+                  <span>LIKE</span>
+                </a>
+              </div><!-- /.drop-menu-box -->
+            </div><!-- /.drop-menu-inner -->
+          </div><!-- /.drop-menu --> 
+      </li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
 
   <div class="sp-header">
 
-    <h1 class="sp-title"><img src="../img/studylog.webp" alt=""></h1>
+    <h1 class="nav-title"><a href="#">AI.PORTFOLIO</a></h1>
+
     <button id="ham-btn">
       <span></span>
     </button>
@@ -39,12 +86,39 @@
 
   <nav id="sp-nav">
     <ul>
-      <li><a href="../">Web Site</a></li>
-      <li><a href="../banner-page/">Banner</a></li>
-      <li><a href="../codepen-page/">CodePen</a></li>
-      <li><a href="../about-page/">About</a></li>
+      <li><a href="#">TOP</a></li>
+      <li><a href="#works">WORKS</a>
+        <div class="sp-drop-menu">
+          <a href="web-page/index.html">
+            <span>WebSite</span>
+          </a>
+          <a href="banner-page/index.html">
+            <span>Banner</span>
+          </a>
+          <a href="codepen-page/index.html">
+            <span>Other</span>
+          </a>
+          </div><!-- /.drop-menu -->         
+      </li>
+      <li><a href="#about">ABOUT</a>
+        <div class="sp-drop-menu">
+          <a href="#profile">
+            <span>PROFILE</span>
+          </a>
+          <a href="#skill">
+            <span>SKILL</span>
+          </a>
+          <a href="#career">
+            <span>CAREER</span>
+          </a>
+          <a href="#like">
+            <span>LIKE</span>
+          </a>
+          </div><!-- /.drop-menu --> 
+      </li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
-  </nav> 
+  </nav>
 
 </header>
 
@@ -61,9 +135,7 @@
 <div class="container">
 
   <div class="img-wrapper">
-    <div class="img-box"><a href="../img/web-img/Felica_Donuts/Felica Bread&Salad-form.webp" data-lightbox="photo"><img src="../img/web-img/Felica_Donuts/Felica Bread&Salad-form.webp" alt=""></a></div>
-    <div class="img-box"><a href="../img/web-img/Felica_Donuts/Felica Bread&Salad-入力画面.webp" data-lightbox="photo"><img src="../img/web-img/Felica_Donuts/Felica Bread&Salad-入力画面.webp" alt=""></a></div>
-    <div class="img-box"><a href="../img/web-img/Felica_Donuts/Felica Bread&Salad-完了画面.webp" data-lightbox="photo"><img src="../img/web-img/Felica_Donuts/Felica Bread&Salad-完了画面.webp" alt=""></a></div>
+    <img src="../img/web-img/Felica_Donuts/Felica_Donuts.webp" alt="">
   </div>
 
   <div class="lead-wrapper">
@@ -155,6 +227,10 @@
     </div>
   </div>
 
+  <button class="back-btn">
+    <a href="../index.html#works">前のページに戻る</a>
+  </button>
+
 </div>
 
 </main>
@@ -163,40 +239,5 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
 <script src="../js/bubbly-bg.js"></script>
-<script src="../js/lightbox.js"></script>
-
-<script>
-
-bubbly({
-    background: (ctx) => {
-        const gradient = ctx.createLinearGradient(0, 0, ctx.canvas.width, ctx.canvas.height);
-        gradient.addColorStop(0, "#fbc2eb");
-        gradient.addColorStop(1, "#a6c1ee");
-        return gradient;
-    },
-    bubbles: {
-        fill: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.07})`,
-        shadow: () => ({blur: 20, color: "#ffffff7e"})
-    }
-});
-
-lightbox.option({
-  showImageNumberLabel: false
-});
-
-$(function(){
-
-  $('#ham-btn').on('click',function(){
-    $(this).toggleClass('is-active');
-    $('#sp-nav').fadeToggle();
-  });
-
-  $('#sp-nav a').on('click',function(){
-    $('#ham-btn').removeClass('is-active');
-    $('#sp-nav').fadeOut();
-  });
-});
-
-</script>
 
 </html>

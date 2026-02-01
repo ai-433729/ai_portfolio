@@ -7,19 +7,20 @@ $text_color: #777;
 
 .contact-lead-box{
 width: fit-content;
-margin: 0 auto 30px;
+margin: 0 auto;
 padding: 20px;
 }
 .contact-lead{
 width: fit-content;
 margin: 0 auto 10px;
-color: #fff;
-border-bottom: 2px dotted #fff;
+color: $text_color;
+border-bottom: 2px dotted $text_color;
+font-size: 13px;
 }
 
 .form-container{
 max-width: 600px;
-margin: 50px auto 0;
+margin: 0 auto;
 color: $text_color;
 font-family: var.$font_en_h2;
 background-color: $bgc_color;
@@ -30,7 +31,7 @@ padding: 50px 0 0;
   }
 }
 .contact-title{
-font-size: 30px;
+font-size: 40px;
 text-align: center;
 }
 
@@ -100,7 +101,7 @@ color: $text_color;
 .list-wrapper{
 width: 80%;
 display: flex;
-margin: 30px auto 0;
+margin: 0 auto;
 gap: 0 30px;
   >label{
   position: relative;

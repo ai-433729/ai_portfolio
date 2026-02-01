@@ -3,8 +3,8 @@
 bubbly({
     background: (ctx) => {
         const gradient = ctx.createLinearGradient(0, 0, ctx.canvas.width, ctx.canvas.height);
-        gradient.addColorStop(0, "#d5aaf9");
-        gradient.addColorStop(1, "#b4ccf7");
+        gradient.addColorStop(0, "#8b78df");
+        gradient.addColorStop(1, "#dbb2f7");
         return gradient;
     },
     bubbles: {
@@ -48,7 +48,7 @@ $(document).ready(function() {
   }, 600); // 0.6秒後に表示
 });
 
-// CommonJS
+//mixitup
 let mixer = mixitup('.filter-wrapper');
 
 //scroll-animation
