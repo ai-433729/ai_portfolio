@@ -1,13 +1,14 @@
 @use "reset";
 @use "var";
 
-$tl_bgc_color: #e9ebff;
+$tl_bgc_color: #a6b1eb;
 $bar_color: #fff;
-$circle_color: #c2e8fa;
-$txt_color: #999; 
+$circle_color: #fcedab;
+$txt_color: #fff; 
 
 .career-wrapper{
 padding: 100px 0;
+background-color: #ffffff42;
 }
 
 .time-line{
@@ -87,7 +88,7 @@ font-weight: bold;
 margin-bottom: 8px;
 }
 .time-lead{
-padding-left: 20px;
+padding-left: 10px;
 font-size: clamp(0.75rem, 0.688rem + 0.25vw, 0.875rem);
 }
 
@@ -97,6 +98,7 @@ transition: 0.5s ease-in-out;
 
 .timeline ul li.in-view::after {
 background: $circle_color;//丸のカラー
+box-shadow: 0 0 20px #fff;
 }
 
 .timeline ul li .timeline-box {

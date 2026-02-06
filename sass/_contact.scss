@@ -1,9 +1,13 @@
 @use "reset";
 @use "var";
 
-$bgc_color: #e9ebff;
+$bgc_color: #b9a5e7;
 $btn_hv_color: #e0c9f7;
-$text_color: #777;
+$text_color: #fff;
+
+#contact{
+background-color: #fcf4aa1f;
+}
 
 .contact-lead-box{
 width: fit-content;
@@ -24,10 +28,19 @@ margin: 0 auto;
 color: $text_color;
 font-family: var.$font_en_h2;
 background-color: $bgc_color;
-border-radius: 10px;
 padding: 50px 0 0;
+border-radius: 16px;
+box-shadow: 0 4px 30px #0000001a;
+backdrop-filter: blur(10.4px);
+-webkit-backdrop-filter: blur(10.4px);
+border: 2px solid #ffffff42;
+border-radius: 10px;
+transition: .4s;
   @media(width <= 767px){
   width: 90%;
+  }
+  &:hover{
+  box-shadow: 0 0 30px #ffffff88;
   }
 }
 .contact-title{

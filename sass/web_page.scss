@@ -85,7 +85,7 @@ color: #fff;
 box-shadow: 0 0 20px #eee;
 border: 1px solid #fff;
 border-radius: 10px;
-background-image: linear-gradient(to right, #f1c2fb 0%, #c3c6f0 51%, #ceb5f5 100%);
+background-image: linear-gradient(to right, #cd8fdb 0%, #9096e9 51%, #b895f0 100%);
     >a{
     color: #fff;
     }
@@ -141,6 +141,7 @@ border: 2px solid #fff;
 border-radius: 6px;
 transition: .4s;
 color: $txt_color;
+letter-spacing: 3px;
 font-size: clamp(0.625rem, 0.438rem + 0.75vw, 1rem);
 gap: 5px;
     >a{
