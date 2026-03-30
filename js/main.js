@@ -13,6 +13,28 @@ bubbly({
     }
 });
 
+//WORKSnav内クリックの遷移
+document.querySelectorAll('#pc-nav a, #sp-nav a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    //リンク先のハッシュ（#web, #bnr, #other）を取得
+    const targetId = this.getAttribute('href').replace('#', '');
+
+    //対象となるラジオボタンを取得
+    const targetRadio = document.getElementById(targetId);
+    
+    if (targetRadio && targetRadio.type === 'radio' && targetRadio.name === 'filter') {
+      //ラジオボタンをチェック状態にする
+      targetRadio.checked = true;
+      
+      const worksSection = document.getElementById('works');
+      if (worksSection) {
+        e.preventDefault(); 
+        worksSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
+
 //header-animation
 $(function(){
   $(window).on('scroll', function(){

@@ -149,8 +149,8 @@ gap: 5px;
 .more-btn{
 display: block;
 width: 280px;
-height: 70px;
-margin: 50px auto;
+height: 60px;
+margin: 20px auto;
 place-content: center;
 text-align: center;
 text-transform: uppercase;
@@ -158,7 +158,7 @@ transition: 0.5s;
 background-size: 200% auto;
 color: $viewbtn_txtcolor;
 font-weight: bold;
-background-color: #acd1f0;
+background-color: #c9bef0;
 border: 3px solid #fff;
 letter-spacing: 2px;
 text-decoration: none;
@@ -420,15 +420,28 @@ transition: 0.4s;
 }
 
 //codepen
-.codepen-wrapper{
-max-width: 1600px;
+.codepen-caontainer{
+width: 90%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 margin: 50px auto;
-padding: 0 80px;
+padding: 20px;
+background-color: #ffffffab;
+border-radius: 10px;
+}
+.codepen-lead{
+padding: 20px;
+color: $web_txt_color;
+}
+.codepen-wrapper{
+margin: 0 10px;
 columns: 4;
 gap: 30px;
 display: grid;
-grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns: repeat(4,1fr);
   @include tab(){
-  /* grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); */
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   }
 }
