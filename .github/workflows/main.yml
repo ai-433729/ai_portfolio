@@ -19,7 +19,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftps  # FTPSを使用(サーバーが対応している場合)
-        server-dir: aa8692919.stars.ne.jp/public_html/ai_portfolio/ #実際のパスに変更
+        server-dir: aa8692919.stars.ne.jp/public_html/portfolio/ #実際のパスに変更
         exclude: |
           **/.git*
           **/.git*/**
