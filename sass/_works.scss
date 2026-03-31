@@ -269,11 +269,11 @@ gap: 10px;
   }
 }
 .filter-wrapper{
-margin: 50px auto;
+margin: 0 auto;
 display: grid;
 grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
 column-gap: 20px;
-padding: 0 20px;
+padding: 50px 20px;
   @include tab(){
   grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
   }
