@@ -3,7 +3,7 @@
 bubbly({
     background: (ctx) => {
         const gradient = ctx.createLinearGradient(0, 0, ctx.canvas.width, ctx.canvas.height);
-        gradient.addColorStop(0, "#8b78df");
+        gradient.addColorStop(0, "#abd9e7");
         gradient.addColorStop(1, "#dbb2f7");
         return gradient;
     },

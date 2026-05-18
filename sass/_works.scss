@@ -419,21 +419,77 @@ transition: 0.4s;
   }
 }
 
+//github
+.github-link{
+display: block;
+max-width: 300px;
+margin: 50px auto;
+transition: .4s;
+  &:hover{
+  scale: 1.02;
+  }
+}
+.github-container{
+max-width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+background-color: #ffffffab;
+border-radius: 10px;
+}
+.github-icon{
+width: 100px;
+height: 100px;
+  svg{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  }
+}
+.github-lead{
+padding: 40px 20px;
+font-size: 14px;
+color: $web_txt_color;
+}
 //codepen
-.codepen-caontainer{
+.codepen-container{
 width: 90%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 margin: 50px auto;
-padding: 20px;
+padding: 20px 0 40px 0;
 background-color: #ffffffab;
 border-radius: 10px;
+}
+.codepen-link{
+display: block;
+transition: .4s;
+  &:hover{
+  scale: 1.04;
+  }
+}
+.codepen-icon{
+width: 400px;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: .6s;
+  svg{
+  width: 240px;
+  height: 240px;
+  }
 }
 .codepen-lead{
 padding: 20px;
 color: $web_txt_color;
+  a:hover{
+  text-decoration: underline;
+  }
 }
 .codepen-wrapper{
 margin: 0 10px;
