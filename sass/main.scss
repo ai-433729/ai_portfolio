@@ -8,6 +8,7 @@
 @use "career";
 @use "like";
 @use "contact";
+@use "footer";
 
 @mixin tab{
     @media(width <= var.$point_tab){

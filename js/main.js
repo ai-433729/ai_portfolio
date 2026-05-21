@@ -73,6 +73,9 @@ $(document).ready(function() {
 //mixitup
 let mixer = mixitup('.filter-wrapper');
 
+//AOS
+AOS.init();
+
 //scroll-animation
 const wrapper = document.querySelector(".js-zoom-fixed-animation");
 const container = wrapper.querySelector(".bg-zoom-container");
