@@ -1,7 +1,7 @@
 
 $font_en: "Noto Serif Display", serif;
 $font_en_h2: 'Josefin Sans', sans-serif;
-$font_ja: "M PLUS Rounded 1c", sans-serif;
+$font_ja: "Kosugi Maru", sans-serif;
 
 $gradient_bg_header: linear-gradient(200deg,#c987ff 0%, #659afc 100%);
 $gradient_bg_2: linear-gradient(200deg,#c4e9ff 0%, #fcdbff 50%, #c4e9ff 100%);
@@ -23,3 +23,8 @@ $filter_color_4: #ecdf89;
 $filter_color_5: #f5a2a2;
 $filter_color_6: #f0c58c;
 $filter_color_7: #bae2b0;
+$filter_color_8: #7f95dd;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');

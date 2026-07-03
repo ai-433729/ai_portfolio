@@ -35,6 +35,28 @@ document.querySelectorAll('#pc-nav a, #sp-nav a').forEach(link => {
   });
 });
 
+//別ページからのWORKSラジオボタンへの遷移
+window.addEventListener('DOMContentLoaded', () => {
+  // URLのハッシュを取得して、先頭の「#」を外す
+  const hash = window.location.hash.replace('#', '');
+  
+  if (hash) {
+    // ハッシュと同じIDのラジオボタンを探す
+    const targetRadio = document.getElementById(hash);
+    
+    if (targetRadio && targetRadio.type === 'radio' && targetRadio.name === 'filter') {
+      targetRadio.checked = true;
+      
+      setTimeout(() => {
+        const worksSection = document.getElementById('works');
+        if (worksSection) {
+          worksSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }
+});
+
 //header-animation
 $(function(){
   $(window).on('scroll', function(){

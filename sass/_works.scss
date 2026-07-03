@@ -266,6 +266,13 @@ gap: 10px;
       color: var.$filter_color_7;
       }
     }
+    &:nth-of-type(8){
+    background-color: var.$filter_color_8;
+      &.mixitup-control-active{
+      background-color: #fff;
+      color: var.$filter_color_8;
+      }
+    }
   }
 }
 .filter-wrapper{

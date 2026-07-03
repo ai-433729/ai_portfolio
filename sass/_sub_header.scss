@@ -6,8 +6,6 @@
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
 $gradient_bgc_color: linear-gradient(120deg,#b4c3ec 0%, #d9c7e9 30%, #b7bbdf 70%, #dbc8f3 100%);
 $bgc_color: #e5cff7;
@@ -41,7 +39,7 @@ gap: 0 50px;
 position: relative;
     li a{
     color: #fff;
-    font-family: var.$font_en;
+    font-family: var.$font_en_h2;
     }
     li{
     transition: .4s;
@@ -62,7 +60,7 @@ z-index: 200;
   display: inline-block;
   margin: auto;
   position: absolute;
-  top: 8px;
+  top: 2px;
   right: -14px;
   transform: rotate(-45deg);
   width: 5px;
@@ -80,22 +78,16 @@ pointer-events: auto;
 opacity: 0;
 visibility: hidden;
 position: absolute;
-top: 100%;
+top: 0;
 left: -20px;
 pointer-events: none;
 width: fit-content;
 z-index: 10;
-&.scroll-drop-menu{
-  top: 0;
-  padding-top: 39px;
-}
+padding-top: 39px;
 }
 
 .drop-menu-inner{
 padding: 10px 40px 10px 30px;
-  &.scroll-drop-menu-inner{
-  background-color: $bgc_color;
-  }
 }
 
 .drop-menu-box{
@@ -112,7 +104,7 @@ margin: 10px 0;
       display: inline-block;
       margin: auto;
       position: absolute;
-      top: 7px;
+      top: 4px;
       left: -14px;
       transform: rotate(-135deg);
       width: 5px;
@@ -254,5 +246,17 @@ z-index: 900;
       }
     }
   }
+}
+}
+
+@keyframes gradient-anim {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
 }
 }
