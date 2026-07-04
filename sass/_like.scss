@@ -1,9 +1,9 @@
 @use "reset";
 @use "var";
 
-.like-wrapper{
-padding: 100px 0;
-background-color: #b9c0fca6;
+.like-wrapper {
+  padding: 100px 0;
+  background-color: #b9c0fca6;
 }
 
 .circle-wrapper {
@@ -34,24 +34,27 @@ background-color: #b9c0fca6;
   left: 0;
   z-index: 2;
   animation: rotation 20s linear infinite;
-    .game-text{
-      font-size: 26px;
-      font-weight: bold;
-      fill: #fff;
-      letter-spacing: 4px;
-    }
-    .anime-text{
-      font-size: 16px;
-      font-weight: bold;
-      fill: #fff;
-      letter-spacing: 4px;
-    }
+
+  .game-text {
+    font-size: 26px;
+    font-weight: bold;
+    fill: #fff;
+    letter-spacing: 4px;
+  }
+
+  .anime-text {
+    font-size: 16px;
+    font-weight: bold;
+    fill: #fff;
+    letter-spacing: 4px;
+  }
 }
 
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -75,10 +78,11 @@ background-color: #b9c0fca6;
 .fav-title {
   color: #fff;
   font-size: 24px;
-  
+
   line-height: 1.4;
   margin: 0;
 }
+
 .fav-lead {
   color: #fff;
   font-size: 12px;

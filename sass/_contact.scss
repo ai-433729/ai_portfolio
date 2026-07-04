@@ -5,189 +5,203 @@ $bgc_color: #fff;
 $btn_hv_color: #c9e6f777;
 $text_color: #a48fbe;
 
-#contact{
-background-color: #fcf4aa1f;
-padding-bottom: 100px;
+#contact {
+  background-color: #fcf4aa1f;
+  padding-bottom: 100px;
 }
 
-.contact-lead-box{
-width: fit-content;
-margin: 0 auto;
-padding: 20px;
-}
-.contact-lead{
-width: fit-content;
-margin: 0 auto 10px;
-color: $text_color;
-border-bottom: 2px dotted $text_color;
-font-size: 13px;
+.contact-lead-box {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.form-container{
-max-width: 600px;
-margin: 0 auto;
-color: $text_color;
-font-family: var.$font_en_h2;
-background-color: $bgc_color;
-padding: 50px 0 0;
-border-radius: 16px;
-box-shadow: 0 4px 30px #0000001a;
-backdrop-filter: blur(10.4px);
--webkit-backdrop-filter: blur(10.4px);
-border: 2px solid #ffffff42;
-border-radius: 10px;
-transition: .4s;
-  @media(width <= 767px){
-  width: 90%;
+.contact-lead {
+  width: fit-content;
+  margin: 0 auto 10px;
+  color: $text_color;
+  border-bottom: 2px dotted $text_color;
+  font-size: 13px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  color: $text_color;
+  font-family: var.$font_en_h2;
+  background-color: $bgc_color;
+  padding: 50px 0 0;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px #0000001a;
+  backdrop-filter: blur(10.4px);
+  -webkit-backdrop-filter: blur(10.4px);
+  border: 2px solid #ffffff42;
+  border-radius: 10px;
+  transition: .4s;
+
+  @media(width <=767px) {
+    width: 90%;
   }
-  &:hover{
-  box-shadow: 0 0 30px #ffffff88;
-  }
-}
-.contact-title{
-font-size: 40px;
-text-align: center;
-}
 
-.form-wrapper{
-width: 80%;
-margin: 0 auto;
-padding-bottom: 30px;
-  @media(width <= 767px){
-  width: 90%;
+  &:hover {
+    box-shadow: 0 0 30px #ffffff88;
   }
 }
 
-.form-list{
-position: relative;
-margin: 30px 0;
+.contact-title {
+  font-size: 40px;
+  text-align: center;
+}
+
+.form-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+
+  @media(width <=767px) {
+    width: 90%;
+  }
+}
+
+.form-list {
+  position: relative;
+  margin: 30px 0;
 }
 
 #list1,
 #list2,
-#list3{
-display: inline-block;
+#list3 {
+  display: inline-block;
 }
-.form-list>label{
-position: absolute;
-top: 0;
-font-size: 16px;
-margin: 10px;
-padding: 0 10px;
-font-size: clamp(0.875rem, 0.813rem + 0.25vw, 1rem);
-background-color: $bgc_color;
-cursor: pointer;
--webkit-transition: top .2s ease-in-out, 
-                    font-size .2s ease-in-out;
-transition: top .2s ease-in-out, 
-            font-size .2s ease-in-out;
-    &.active{
+
+.form-list>label {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  margin: 10px;
+  padding: 0 10px;
+  font-size: clamp(0.875rem, 0.813rem + 0.25vw, 1rem);
+  background-color: $bgc_color;
+  cursor: pointer;
+  -webkit-transition: top .2s ease-in-out,
+    font-size .2s ease-in-out;
+  transition: top .2s ease-in-out,
+    font-size .2s ease-in-out;
+
+  &.active {
     top: -25px;
     font-size: 16px;
-    }
+  }
 }
 
 #name,
 #email,
 #messege:focus {
-outline: none;
+  outline: none;
 }
 
 #name,
-#email
-{
-width: 100%;
-padding: 10px;
-border: 1px solid $text_color;
-font-size: 16px;
-background-color: $bgc_color;
-color: $text_color;
-}
-#messege{
-width: 100%;
-padding: 20px 20px 60px;
-border: 1px solid $text_color;
-font-size: 16px;
-background-color: $bgc_color;
-color: $text_color;
+#email {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $text_color;
+  font-size: 16px;
+  background-color: $bgc_color;
+  color: $text_color;
 }
 
-.list-wrapper{
-width: 80%;
-display: flex;
-margin: 0 auto;
-gap: 0 30px;
-  >label{
-  position: relative;
-  background-color: transparent;
-  transition: none;
-  display: block;
-  cursor: pointer;
-  transition: .4s;
-    &:hover{
-    translate: 0 -2px;
+#messege {
+  width: 100%;
+  padding: 20px 20px 60px;
+  border: 1px solid $text_color;
+  font-size: 16px;
+  background-color: $bgc_color;
+  color: $text_color;
+}
+
+.list-wrapper {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  gap: 0 30px;
+
+  >label {
+    position: relative;
+    background-color: transparent;
+    transition: none;
+    display: block;
+    cursor: pointer;
+    transition: .4s;
+
+    &:hover {
+      translate: 0 -2px;
     }
   }
 }
 
 
 
-@media(width <= 767px){
-.list-wrapper{
-flex-direction: column;
-  >label{
-  margin: 4px 0;
+@media(width <=767px) {
+  .list-wrapper {
+    flex-direction: column;
+
+    >label {
+      margin: 4px 0;
+    }
   }
 }
-}
-[type="radio"]{
-margin-right: 8px;
-cursor: pointer;
+
+[type="radio"] {
+  margin-right: 8px;
+  cursor: pointer;
 }
 
-.submission-area{
-display: grid;
-place-items: center;
-min-height: 100px;
-padding-bottom: 30px;
+.submission-area {
+  display: grid;
+  place-items: center;
+  min-height: 100px;
+  padding-bottom: 30px;
 }
 
 .submit-btn,
-.thx-txt{
-grid-area: 1 / 1;
-transition: opacity 0.3s;
+.thx-txt {
+  grid-area: 1 / 1;
+  transition: opacity 0.3s;
 }
-.submit-btn{
-display: block;
-overflow: hidden;
-border: 1px solid $text_color;
-transition: .4s;
-  &:hover{
-  background-color: $btn_hv_color;
-  translate: 0 -3px;
+
+.submit-btn {
+  display: block;
+  overflow: hidden;
+  border: 1px solid $text_color;
+  transition: .4s;
+
+  &:hover {
+    background-color: $btn_hv_color;
+    translate: 0 -3px;
   }
 }
+
 input[type="submit"] {
-    width: 100%;
-    height: 100%;
-    padding: 8px 30px;
-    background: none;
-    border: none;
-    color: $text_color;
-    cursor: pointer;
-    display: block;
-    outline: none;
-  }
-
-.thx-txt{
-display: block;
-opacity: 0; 
-pointer-events: none;
-text-align: center;
-font-size: clamp(0.75rem, 0.625rem + 0.5vw, 1rem);
+  width: 100%;
+  height: 100%;
+  padding: 8px 30px;
+  background: none;
+  border: none;
+  color: $text_color;
+  cursor: pointer;
+  display: block;
+  outline: none;
 }
 
-.thx-txt.is-active{
-opacity: 1;
-pointer-events: auto;
+.thx-txt {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  font-size: clamp(0.75rem, 0.625rem + 0.5vw, 1rem);
+}
+
+.thx-txt.is-active {
+  opacity: 1;
+  pointer-events: auto;
 }

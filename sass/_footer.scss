@@ -1,33 +1,36 @@
 @use "var";
 
-$gradient_bgc_color: linear-gradient(120deg,#b4c3ec 0%, #d9c7e9 30%, #b7bbdf 70%, #dbc8f3 100%);
+$gradient_bgc_color: linear-gradient(120deg, #b4c3ec 0%, #d9c7e9 30%, #b7bbdf 70%, #dbc8f3 100%);
 
-footer{
-height: 80px;
-display: flex;
-justify-content: center;
-align-items: center;
-background: $gradient_bgc_color;
-animation: gradient-anim 6s ease alternate infinite;
-background-size: 200% 200%;
-border-top: 2px solid #fff;
-z-index: 100;
-    >p{
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $gradient_bgc_color;
+  animation: gradient-anim 6s ease alternate infinite;
+  background-size: 200% 200%;
+  border-top: 2px solid #fff;
+  z-index: 100;
+
+  >p {
     font-family: var.$font_en;
     color: #fff;
     font-weight: bold;
     font-size: 24px;
-    }
+  }
 }
 
 @keyframes gradient-anim {
-0% {
-  background-position: 0% 50%;
-}
-50% {
-  background-position: 100% 50%;
-}
-100% {
-  background-position: 0% 50%;
-}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
