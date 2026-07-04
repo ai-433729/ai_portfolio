@@ -19,7 +19,7 @@
   
   <nav id="pc-nav">
 
-    <h1 class="nav-title"><a href="#">Ai_PORTFOLIO</a></h1>
+    <h1 class="nav-title"><a href="../index.html">Ai_PORTFOLIO</a></h1>
     
     <ul>
       <li><a href="../index.html">TOP</a></li>
@@ -76,7 +76,7 @@
 
   <div class="sp-header">
 
-    <h1 class="nav-title"><a href="#">Ai.PORTFOLIO</a></h1>
+    <h1 class="nav-title"><a href="../index.html">Ai.PORTFOLIO</a></h1>
 
     <button id="ham-btn">
       <span></span>
@@ -211,5 +211,20 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
 <script src="../js/bubbly-bg.js"></script>
+<script>
+//ham-btn
+$(function(){
+
+  $('#ham-btn').on('click',function(){
+    $(this).toggleClass('is-active');
+    $('#sp-nav').fadeToggle();
+  });
+
+  $('#sp-nav a').on('click',function(){
+    $('#ham-btn').removeClass('is-active');
+    $('#sp-nav').fadeOut();
+  });
+});
+</script>
 
 </html>

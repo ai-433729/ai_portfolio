@@ -19,7 +19,7 @@
   
   <nav id="pc-nav">
 
-    <h1 class="nav-title"><a href="#">Ai_PORTFOLIO</a></h1>
+    <h1 class="nav-title"><a href="../index.html">Ai_PORTFOLIO</a></h1>
     
     <ul>
       <li><a href="../index.html">TOP</a></li>
@@ -76,7 +76,7 @@
 
   <div class="sp-header">
 
-    <h1 class="nav-title"><a href="#">Ai.PORTFOLIO</a></h1>
+    <h1 class="nav-title"><a href="../index.html">Ai.PORTFOLIO</a></h1>
 
     <button id="ham-btn">
       <span></span>
@@ -161,14 +161,53 @@
       <h3>テーマ</h3>
         <p>職業訓練校で学んだことを元に制作したポートフォリオです。</p>
 
-      <h3>設計</h3>
+      <h3>設計、デザイン</h3>
         <ul>
-          <li>【トップページ】<br>
-            背景にグラデーションとパーティクルを使用することで、淡く綺麗な印象にしました。<br>
-            タイトルとGSAPでのスクロールアクションを使用して動きを付けました。
+          <li>
+            <p class="design-title">
+              【トップページ】
+            </p>
+            <p class="design-lead">
+              背景にグラデーションとパーティクルを使用することで、淡く綺麗な印象にしました。
+            </p>
+            <p class="design-lead">
+            タイトルの文字にアニメーションととGSAPでのスクロールアクションを使用して動きを付けました。
+            </p>
           </li>
-          <li></li>
-          <li></li>
+          <li>
+            <p class="design-title">
+              【ヘッダー】
+            </p>
+            <p class="design-lead">
+              タイトルとナビゲーションメニューのシンプルなつくりにしました。
+            </p>
+            <p class="design-lead">
+              項目が複数あるタイトルにはカーソルを合わせるとドロップダウンメニューを表示させて選択できるようにしました。
+            </p>
+            <p class="design-lead">
+              トップページを表示している間はページが見やすいように背景を透明にし、トップページを表示し終わったら逆にヘッダーの文字が見えにくくなるので、背景色を入れるようにスクロールイベントを設定しました。
+            </p>
+            <p class="design-lead">
+              スマホサイズの場合はハンバーガーメニューにし、表示すると全要素が選択できるようにしました。
+            </p>
+          </li>
+          <li>
+            <p class="design-title">
+            【WORKSページ】
+            </p>
+            <p class="design-lead">
+              ラジオボタンを使用してWebサイト、バナー、その他の制作物をクリックすると閲覧できるようにしました。
+            </p>
+            <p class="design-lead">
+              背景に合わせたラジオボタンのデザインにし、ナビゲーションボタンとも連携させクリックイベントが実行されるように設計しました。
+            </p>
+            <p class="design-lead">
+              Webサイトの閲覧にはMix-it-upを使用したタグを上部に表示させ、クリックすると、どの言語を使用して制作したのかわかるようにしました。
+            </p>
+            <p class="design-lead">
+              バナーの閲覧には、ラジオボタンを使用したクリックイベントを使用してカテゴリ分けを行いました。
+            </p>
+          </li>
         </ul>
 
       <h3>使用したプラグイン</h3>
@@ -204,5 +243,20 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
 <script src="../js/bubbly-bg.js"></script>
+<script>
+//ham-btn
+$(function(){
+
+  $('#ham-btn').on('click',function(){
+    $(this).toggleClass('is-active');
+    $('#sp-nav').fadeToggle();
+  });
+
+  $('#sp-nav a').on('click',function(){
+    $('#ham-btn').removeClass('is-active');
+    $('#sp-nav').fadeOut();
+  });
+});
+</script>
 
 </html>

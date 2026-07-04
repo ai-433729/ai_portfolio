@@ -204,16 +204,17 @@ animation: gradient-anim 6s ease alternate infinite;
 background-size: 200% 200%;
 z-index: 900;
   li{
-  margin-bottom: 20px;
     >a{
     display: block;
     padding: 10px 20px;
-    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
     color: #fff;
     letter-spacing: 4px;
     display: flex;
+    font-family: var.$font_ja;
     }
-    &:nth-of-type(3)>a{
+    &:first-of-type>a,
+    &:last-of-type>a{
     border: none;
     }
     &:last-of-type{
@@ -238,8 +239,8 @@ z-index: 900;
         display: inline-block;
         margin: auto;
         position: absolute;
-        top: 10px;
-        left: 18px;
+        top: 7px;
+        left: 10px;
         transform: rotate(-135deg);
         width: 5px;
         height: 5px;
