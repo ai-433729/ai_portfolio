@@ -4,6 +4,7 @@
 .like-wrapper {
   padding: 100px 0;
   background-color: #b9c0fca6;
+  overflow-x: hidden;
 }
 
 .circle-wrapper {
@@ -18,8 +19,8 @@
 
 .circle-container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: 50px auto;
   display: flex;
   justify-content: center;
@@ -39,14 +40,14 @@
     font-size: 26px;
     font-weight: bold;
     fill: #fff;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
   }
 
   .anime-text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     fill: #fff;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
   }
 }
 
