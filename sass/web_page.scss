@@ -36,6 +36,9 @@ body {
     }
 }
 
+p, li{
+    font-family: var.$font_ja;
+}
 .lead-wrapper {
     width: 80%;
     margin: 0 auto;
@@ -72,6 +75,7 @@ h3 {
 }
 .theme-read, .design-lead, .imp-lead{
     font-size: 14px;
+    line-height: 1.3;
 }
 
 .back-btn {
