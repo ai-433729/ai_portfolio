@@ -36,9 +36,11 @@ body {
     }
 }
 
-p, li{
+p,
+li {
     font-family: var.$font_ja;
 }
+
 .lead-wrapper {
     width: 80%;
     margin: 0 auto;
@@ -70,10 +72,14 @@ h3 {
     margin: 30px 0 10px;
     font-size: clamp(1rem, 0.875rem + 0.5vw, 1.25rem);
 }
-.design-list>li{
+
+.design-list>li {
     padding-bottom: 10px;
 }
-.theme-read, .design-lead, .imp-lead{
+
+.theme-read,
+.design-lead,
+.imp-lead {
     font-size: 14px;
     line-height: 1.3;
 }
