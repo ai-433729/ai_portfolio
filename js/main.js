@@ -35,6 +35,18 @@ document.querySelectorAll('#pc-nav a, #sp-nav a').forEach(link => {
   });
 });
 
+//WORKSセクションの高さ変化を自動監視する設定
+//WORKS内の項目が少ない時画面の高さがずれて、下のAOSがスクロールしてもうまく表示されなくなるため追加
+const worksContainer = document.getElementById('works'); 
+
+if (worksContainer && typeof AOS !== 'undefined') {
+  const resizeObserver = new ResizeObserver(() => {
+    AOS.refresh();
+  });
+  
+  resizeObserver.observe(worksContainer);
+}
+
 //別ページからのWORKSラジオボタンへの遷移
 window.addEventListener('DOMContentLoaded', () => {
   // URLのハッシュを取得して、先頭の「#」を外す
