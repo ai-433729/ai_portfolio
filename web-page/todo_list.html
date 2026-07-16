@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reactクイズ</title>
+<title>ToDoリスト</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,18 +135,17 @@
 <div class="container">
 
   <div class="img-wrapper">
-    <img src="../img/web-img/react_quiz/react_quiz.png" alt="">
+    <img src="../img/web-img/todo_list/todo_list.png" alt="">
   </div>
 
   <div class="lead-wrapper">
     <div class="lead">
 
-      <h2 class="title-name">Reactクイズ</h2>
+      <h2 class="title-name">ToDoリスト</h2>
 
       <div class="category-wrapper">
         <p class="category" data-caregory="html">HTML/CSS</p>
         <p class="category" data-caregory="js">JavaScript</p>
-        <p class="category" data-caregory="react">React</p>
       </div>
 
       <button class="page-btn">
@@ -159,31 +158,29 @@
         <p>約１週間</p>
 
       <h3>テーマ</h3>
-        <p>Reactを使用したクイズページ</p>
+        <p>JavaScriptを使用したToDoリスト</p>
 
       <h3>設定</h3>
         <p>
-          Reactの解説動画を参考にして制作しました。<br>
+          JavaSciriptの勉強のために、解説サイトを参考にして制作しました。<br>
         </p>
         
       <h3>ページ構成</h3>
         <ul>
-          <li>メインページ</li>
-          <li>クイズページ</li>
-          <li>ローディングページ</li>
-          <li>リザルトページ</li>
-        </ul>
-
-      <h3>使用したライブラリ</h3>
-        <ul>
-          <li>react-confetti</li>
+          <li>【メインページ】</li>
+          <li>・タイトル</li>
+          <li>・リスト内容入力欄と追加ボタン</li>
+          <li>・チェックボックスと追加されたリストを表示、削除ボタン</li>
+          <li>・追加されたリストのカウント数の出力欄</li>
         </ul>
       
       <h3>所感</h3>
         <p>
-          Reactの解説動画を参考に、動的なクイズページを制作しました。<br>
-          複数の解説記事を参考に、自力でビルドおよびGitHubPagesへのデプロイまで完了させました。<br>
-          ドキュメントを読み解きながら、ローカル環境から本番環境へ公開するまでの一連のフロントエンド開発フローを実践的に学びました。<br>
+          JavaScriptの解説サイトを参考に、動的なToDoリストページを制作しました。<br>
+          LiquidGlassを使用した近代的なデザインにしました。<br>
+          解説サイトのコードだとSafariで動作しなかったため、AIに相談し試行錯誤しながら完成させました。<br>
+          主な原因は、プライベート変数の使用、追加ボタンを押すとページがリロードされてしまうこと、クラスフィールド(constructorを使わずにクラスの直下に直接変数を書く構文)でした。<br>
+          説明を読み解説メモを入れながら制作しましたが理解しきれていないので、JavaScriptに関しての勉強はまだまだ必要だと感じました。
         </p>
 
     </div>
